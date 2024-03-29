@@ -5,6 +5,11 @@
 ### pd.Series.str
 1. can be used to apply any string function to 'object' data inside of a pd.Series object
     - ex. tweets["content"].str.len() > 15
+    - str.match(regex) - uses re.match to filter the strings
+    - str.contains(regex) - uses re.search to filter the string
+    > re.match() - if zero or more characters at the beginning of string match the regular expression pattern, return a corresponding match object.
+
+    > re.search() - scan through string looking for the first location where the regular expression pattern produces a match
 
 ### Sorting values
 1. sort_values() - can be used on <u>pd.DataFrame</u> object
