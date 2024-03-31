@@ -12,10 +12,23 @@
     > re.search() - scan through string looking for the first location where the regular expression pattern produces a match
 
 ### Sorting values
-1. sort_values() - can be used on <u>pd.DataFrame</u> object
+1. **sort_values()** - can be used on <u>pd.DataFrame</u> object
     - by=[columns] - which columns to sort by
     - axis=0/1 - sort rows/columns
-    - the method can be also used with <u>pd.Series</u> object, but without the 'by' argument
+    > can be used on <u>pd.Series</u> object, but without the *by* argument
+
+### Largest and smallest values
+1. **nlargest** - can be used on <u> pd.DataFrame</u>
+    - n - how many largest elements to return (max)
+    - columns - by which columns to sort
+    - returns a pd.DataFrame
+    > can be used on <u>pd.Series</u>, but without the *columns* argument
+
+2. **nsmallest** - can be used on <u> pd.DataFrame</u>
+    - n - how many smallest elements to return (max)
+    - columns - by which columns to sort
+    - returns a pd.DataFrame
+    > can be used on <u>pd.Series</u>, but without the *columns* argument 
 
 ### Getting rid of the duplicates
 
@@ -23,4 +36,5 @@
     - subset=[columns] - which columns to consider
     - keep="first"/"last"/False - drop first/last/all duplicates
 2. **unique()** - can be used on a <u>pd.Series</u> object
-    
+
+    > drop_duplicates() returns a <u>pd.DataFrame</u> object, whereas unique() returns a <u>np.ndarray</u> object!
