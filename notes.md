@@ -17,6 +17,11 @@
     - axis=0/1 - sort rows/columns
     > can be used on <u>pd.Series</u> object, but without the *by* argument
 
+### Ranking values
+1. **rank()**
+    - ascending=0/1 - wheter or not the elements should be rank in ascending order
+    - method={‘average’, ‘min’, ‘max’, ‘first’, ‘dense’} - what to do in case of a tie
+
 ### Largest and smallest values
 1. **nlargest** - can be used on <u> pd.DataFrame</u>
     - n - how many largest elements to return (max)
