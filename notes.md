@@ -22,6 +22,18 @@
     - ascending=0/1 - wheter or not the elements should be rank in ascending order
     - method={‘average’, ‘min’, ‘max’, ‘first’, ‘dense’} - what to do in case of a tie
 
+
+### Mode and Median
+1. **mode()** - the value that appears most often. It can be multiple values.
+    - axis=0/1 - over column/over row
+    - numeric_only=False
+    - dropna=True
+
+2. **median()** - returns median of the values over given axis
+    - axis=0/1 - over column/over row
+    - numeric_only=False
+    - skipna=True
+
 ### Largest and smallest values
 1. **nlargest** - can be used on <u> pd.DataFrame</u>
     - n - how many largest elements to return (max)
